@@ -3,7 +3,7 @@
   "version": "3.8.1",
   "description": "Bindings to GDAL (Geospatial Data Abstraction Library) with full async support",
   "license": "Apache-2.0",
-  "url": "https://github.com/mmomtchev/node-gdal-async",
+  "url": "https://github.com/emprata/node-gdal-async",
   "main": "./lib/gdal.js",
   "types": "./lib/index.d.ts",
   "keywords": [
@@ -25,33 +25,17 @@
     "module_name": "gdal",
     "module_path": "./lib/binding/{node_abi}-{platform}-{arch}",
     "remote_path": "v{version}",
-    "host": "https://github.com/mmomtchev/node-gdal-async/releases/download/",
+    "host": "https://github.com/emprata/node-gdal-async/releases/download/",
     "package_name": "{node_abi}-{platform}-{arch}.tar.gz",
     "hosting": {
       "provider": "github",
-      "repo": "mmomtchev/node-gdal-async"
+      "repo": "emprata/node-gdal-async"
     }
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mmomtchev/node-gdal-async.git"
+    "url": "https://github.com/emprata/node-gdal-async.git"
   },
-  "funding": {
-    "url": "https://github.com/sponsors/mmomtchev",
-    "type": "individual"
-  },
-  "contributors": [
-    {
-      "name": "Brandon Reavis",
-      "url": "https://github.com/brandonreavis",
-      "email": "brandon@naturalatlas.com"
-    },
-    {
-      "name": "Momtchil Momtchev",
-      "url": "https://github.com/mmomtchev",
-      "email": "momtchil@momtchev.com"
-    }
-  ],
   "scripts": {
     "test": "mocha && npm run test:stress 20",
     "bench": "node bench/streams.js",
@@ -85,7 +69,7 @@
     "postpublish": "gh workflow run test-npm.yml -F version=$npm_package_version"
   },
   "dependencies": {
-    "@mapbox/node-pre-gyp": "^1.0.8",
+    "@mapbox/node-pre-gyp": "1.0.11",
     "nan": "^2.17.0",
     "node-gyp": "^10.0.0",
     "xmlbuilder2": "^3.0.2",
