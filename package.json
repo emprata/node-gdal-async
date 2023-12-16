@@ -1,5 +1,5 @@
 {
-  "name": "gdal-async",
+  "name": "@emprata/gdal-async",
   "version": "3.7.3",
   "description": "Bindings to GDAL (Geospatial Data Abstraction Library) with full async support",
   "license": "Apache-2.0",
